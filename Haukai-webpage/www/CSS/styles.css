@@ -1,0 +1,1333 @@
+
+
+  
+
+ 
+
+body {
+    margin: 0px;
+}
+
+/*styles for header 1 throughout the website */
+h1 {
+    font-family: "Mulish"; 
+    font-size: 36px;
+    color: #698c9d;
+    font-weight: 300;
+    text-align: center; /* Center-align the text */
+    margin-top:80px ; /* Center horizontally */
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+     }
+
+/*styles for header 2 throughout the website */
+h2 {
+    text-decoration: none;
+    border-bottom: 1px solid #698c9d; /*  a separator between content below */
+    padding-bottom: 10px; /* padding for spacing */
+    font-family: "Mulish"; 
+    font-size: 26px;
+    color: #698c9d;
+    font-weight: 300; /*thickness of the writing. */
+    text-align: center; /* Center-align the text */
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+}
+
+/*styles for paragraphs throughout the website */
+p {font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+  }
+
+/*making sure the toggle menu isn't visable on bigger devices and the mobile logo is not visible*/
+.mobile-menu {
+    display: none;
+}
+
+.toggle-menu{ 
+    display: none;
+}
+
+.mobile-logo{
+    display: none;
+}
+  
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*HEADER STYLES*/
+  
+  #homepage-logo { 
+    position: relative;
+    margin: 0;
+    padding: 0; /* Centers the logo horizontally */
+    width: 250px;
+    height: auto;
+    left:-10px;
+    
+}
+/*making sure the staff portal link is at the top right of the screen*/
+.staff-portal {
+    float: right;
+    text-decoration: none;
+    position: absolute; /* Add positioning */
+    top: 20px; /* Adjust the margin as needed */
+    right: 170px; /* Use a negative margin to move it up */
+}
+.staff-portal a {
+    display: flex;
+    border-bottom: none; /* Optional: Add a separator between links */
+    font-size: 18px;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 70px;
+    margin-right: 160px;
+    padding-top: 60px;
+    justify-content: space-between; /* Distributes items across the page */
+    align-items: center;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    border:0cqb;
+    color: #333;
+    border-bottom: 1px solid #333; /* Optional: Add a separator between links */
+    padding-bottom: 10px; /* Optional: Adjust padding for spacing */
+    font-family: "Mulish", sans-serif;
+    font-size: 21px;
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+}
+
+nav ul li a:hover {
+    color:#65a6c5; /* Colour when an option is hovered over */
+    opacity: 1;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 25px;
+    top: 100%; /* Position dropdowns below their parent */
+    min-width: 300px;
+    left: -110px;
+    
+}
+
+.dropdown-content li {
+    display: block; /* Show each dropdown item on a new line */
+    margin-bottom: 10px; /* Add some spacing between items */
+    border-bottom: none; /* Remove the bottom border */
+    font-size: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+.dropdown-content li a {
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*LOGO FOR CHILD PAGES*/
+#logo{ margin-top: -50px;}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*HOMPAGE INTRODUCTION STYLES*/
+
+.welcome {
+    text-align: center; /* Center-align the text */
+    margin-bottom: 150px;
+
+}
+
+
+/*HOMEPAGE MENUS SECTION STYLES*/
+
+.menu-homepage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    /* Set background image */
+    background: url("../Images/Scallops.jpg") no-repeat fixed 100%;
+    background-size: cover; /* Ensures the image covers the entire background */
+    margin: 0 17%; /* Margin adjusted to the sides */
+    background-size: 100% auto; /* Adjust the zoom level */
+}
+
+/*Styles for the boxes for the menus on the homescreen */
+.menu-item {
+    width: calc(50% - 20px); /* 50% width minus margins */
+    max-width: 400px; /*width of the boxes */
+    height: calc(50%);
+    border: 2px solid #698c9d;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+/*make sure the images shown in the drinks and food menu boxes when the screen is smaller are not visible*/
+.home-menu-image {
+    display: none;
+}
+
+.menu-item:first-child {
+    margin-right: 300px; /* Adjust space between the boxes */
+}
+
+.menu-item h2 {
+    margin-top: 0; /* Resetting heading margin */
+}
+
+.menu-item p {
+    margin-bottom: 100px; /* Spacing between paragraph and button */
+}
+/*buttons for the menus on the homepage*/
+.menu-item a.button {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #576f7a;
+    border: 1px solid #698c9d;
+    text-align: center;
+    transition: background-color 0.4s ease;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px; /* Space from the paragraph */
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+}
+
+.menu-item a.button:hover {
+    background-color: #6899b2;
+    color: white;
+}
+
+
+/*HOME PAGE MAORI CULTURE AND RECIPES STYLES*/
+
+.homeculture {   
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+.culture-images {
+    display: flex; /*making sure the images are beside each other */
+    justify-content: space-around;
+    align-items: center;
+     
+}
+
+.culture-image {
+    text-align: center;
+    margin-top: -70px;
+    
+}
+
+.culture-image img {
+    width: 450px; /* Adjust image size */
+    height: auto;
+      
+}
+
+/*Button styles for the maori culture and recipes homepage*/
+.culture-homepage-button  {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #576f7a;
+    border: 1px solid #698c9d;
+    text-align: center;
+    transition: background-color 0.4s ease;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    margin-top: 20px; /* Aligns button at the bottom */
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+  
+}
+/*this button will be the traditional recipes button for smaller screens*/
+.culture-homepage-button2  {
+    display: none; /* set the display to none so it is not visible on larger screens.*/
+    }
+/* styles for when hovering over buttons. This is done to all buttons */
+.culture-homepage-button:hover {
+    background-color: #6899b2;
+    color: white;
+}
+
+
+/*COME VISIT US STYLES FOR HOMEPAGE*/
+
+.visit {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+/* styling the map*/
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Adjust the margin to create space */   
+}
+/*reservation button styles*/
+.reservation-button  {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #576f7a;
+    border: 1px solid #698c9d;
+    text-align: center;
+    transition: background-color 0.4s ease;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    margin-top: 40px; 
+    width: 300px;
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+    
+}
+
+.reservation-button:hover {
+    background-color: #6899b2;
+    color: white;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+                                                                                                       /*FOOTER STYLES*/
+ 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*making sure the items in the footer are spread horizontally. */
+    background-color: rgba(105, 140, 157, 0.3);
+    padding: 20px;
+    padding-left: 160px;
+    padding-right:160px;
+    margin: 0;
+  }
+
+.contact-info p{
+    text-align: left; /*alligning the contact info correctly*/
+    margin-left: 20px;
+}
+.copyright{
+    margin-left: -140px; /*adjusting the copyright so appears in the center */
+}
+
+  /* Social media icon styles */
+  
+.social-media .fa {
+    padding: 15px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; /* Round the icons */
+    margin: 15px; /* space between icons */
+    background-color: #ffffff;
+    color: #6899b2;
+    transition: transform 0.3s ease; /*  transition for smooth effect */
+  }
+  
+  /* Hover effect for social media icons */
+.social-media .fa:hover {
+    transform: scale(1.1); /* Scale the icon when hovered */
+    background-color: #6899b2;
+    color: #ffffff;
+
+  }
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*intro section is used in all child pages and just makes the spaces between the lines shorter than the homepage introduction.*/
+.intro p{
+    margin: auto;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+                                                                                             /*MAORI CULTURAL EXPERIENCE PAGE*/
+
+
+.history p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+}
+/*styles for the image on the history section*/
+
+.history-picture{
+    display: block;
+    text-align: center;/*ensuring the image is at the centre of the screen*/
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.history-picture img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+/*style for the image description on the history section*/
+.image-description{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #698c9d; 
+}
+.cultural-video p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+/*setting the size and position of the youtube video*/
+#cultural-video-iframe{
+    width:1020px ;
+    height: 600px;
+    max-width:100% ;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for the audio icon */
+.top-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    max-width: 96%; /* Set a maximum width for responsiveness */
+    padding: 0;
+}
+  
+
+.center-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 45%; /* Set a maximum width for the icons */
+    margin: 0 auto; /* Center the icons container */
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  
+  .audio-word {
+    text-align: center; /* Center the text within each icon block */
+    margin-bottom: 20px; /* Add spacing between icons */
+  }
+   
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+                                                                                                    /*TRADITIONAL RECIPES AND FOOD AND DRINK PAGES STYLES */
+
+.maori-bread p{ /*changing paragraph underneath the Maori bread title to better fit the screen on smallest device and get rid of margins*/
+   margin: auto;
+   padding-left: 4px;
+   padding-right: 4px;
+}
+.wines h1,
+.beers h1,
+.juices h1,
+.appetizer h1,
+.mains h1,
+.dessert h1,   /*aligning the h1's in the food page, drinks page and the traditional recipe page */
+.paua-soup h1,
+.maori-bread h1{
+    font-size: 29px;
+    margin-top: 90px;
+    padding-top: 20px;
+    border-top: solid 1px #698c9d ;
+}
+/*alligning the ingredients title to the left*/
+
+.recipe-details h2{
+    border: none;
+    text-align: left;
+}
+
+.directions h2{ 
+    margin-top: 60px;
+    border:none
+}
+/*aligning directions and changing the margin */
+.directions{
+    margin-bottom: 120px;
+}
+.directions p{
+    margin: auto;
+    width: 45%;
+    
+    
+}
+
+
+/* spacing and styles for the ingredients and image paua and maori bread*/
+.drink-menu, 
+.food-menu,
+.recipe-details {
+    display: flex;
+    flex-direction: row;          /* The reseservation page, Food page and Drinks page all have the flex direction to row on the lists and images  */
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+     padding: 0 20px;
+
+}
+
+/* ingredients list styles paua */
+.ingredients-paua{
+    width: 20%; /* Fixed width for ingredients */
+    padding-left: 10%;
+   
+}
+.ingredients-paua ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-paua ul li {
+    margin-bottom: 18px;
+    font-family: "Mulish", sans-serif; /* font family */
+    font-size: 16px; /* font size */
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+}
+
+/*paua dish images styles*/
+
+.paua-image-mobile { /*mobile image that is only seen in the mobile app*/
+    display: none;
+}
+.paua-image{
+    width: 25%;
+    padding-right: 10%;
+    
+}
+.paua-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space under image */
+    margin-left: auto; /* Center image within its container */
+    margin-right: auto; /* Center image within its container */
+   
+ }
+
+
+/* ingredients list styles maori bread. */
+.ingredients-bread{
+    width: 20%; /* Fixed width for ingredients */
+    padding-left: 10%;
+   
+}
+.ingredients-bread ul {
+    list-style-type: none;
+    padding: 0;
+}
+.ingredients-bread ul li { /*styling for the ingredients list*/
+    margin-bottom: 18px;
+    font-family: "Mulish", sans-serif; /* font family */
+    font-size: 16px; /* font size */
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+}
+/*maori bread dish images styles*/
+ 
+ .bread-image{
+    width: 25%;
+    padding-left: 10%;
+    
+}
+.bread-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space under image */
+    margin-left: auto; /* Center image within its container */
+    margin-right: auto; /* Center image within its container */
+   
+ }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.calendar {                                                                             /*RESERVATION PAGE STYLES*/
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    height: 800px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.calendar iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+                                                                                        
+
+.booking-form {
+    text-align: center; /*making the booking form in the center of the screen*/
+    margin-top: 40px auto;
+    margin-bottom: 40px;
+    width: 100%;
+
+}
+
+.booking-form iframe{
+    width: 100%; /* ,ake the iframe fill its container */
+    max-width: 100%; /*  iframe doesn't overflow its container */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.wine-menu p,                                                                           /*THE REST OF FOOD MENU PAGE STYLES AND DRINK MENU PAGE STYLES*/             
+.appetizer-menu p,
+.mains-menu p,
+.dessert-menu p{ /*styling the paragraphs for the menus*/
+    margin-bottom: 18px;
+    font-family: "Mulish", sans-serif; /* font family */
+    font-size: 16px; /* font size */
+    text-align: left; /* Align text to the left */
+    width: 80%;
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+
+}
+
+.wine-image-mobile,
+.juice-image-mobile,
+.appetizer-image-mobile,
+.dessert-image-mobile{
+    display: none;
+}  
+.wine-menu,
+.juice-menu,                                                                                        
+.appetizer-menu,
+.dessert-menu
+{
+    width: 20%; /* Fixed width for menu lists*/
+    padding-left: 30%;
+   
+}
+.juice-menu,
+.dessert-menu{
+    margin-bottom: 120px;
+}
+.juice-menu ul,
+.wine-menu ul,
+.appetizer-menu ul,
+.dessert-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.wine-menu ul li,
+.juice-menu ul li,
+.appetizer-menu ul li, /*styling for the words in the list*/
+.dessert-menu ul li{
+    margin-bottom: 18px;
+    font-family: "Mulish", sans-serif; /* font family */
+    font-size: 21px; /* font size */
+    color: #576f7a;
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+}
+
+.wine-image,
+.juice-image,
+.appetizer-image,
+.dessert-image{
+    width: 25%;
+    padding-right: 15%;
+   
+    
+}
+.juice-image,
+.dessert-image{
+    margin-bottom: 120px;
+}
+.wine-image img,
+.juice-image img,
+.appetizer-image img,
+.dessert-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space under image */
+    margin-left: auto; /* Center image within its container */
+    margin-right: auto; /* Center image within its container */
+   
+ }
+ 
+
+/* Mains list styles mains. */
+.beer-menu,
+.mains-menu{
+    width: 20%; /* Fixed width  */
+    padding-right: 5%;
+   
+}
+.beer-menu ul,
+.mains-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.beer-menu ul li,
+.mains-menu ul li { /*styling for the mainslist*/
+    margin-bottom: 18px;
+    font-family: "Mulish", sans-serif; /* font family */
+    font-size: 21px; /* font size */
+    color: #576f7a;
+    src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+
+}
+.beer-image,
+.mains-image{
+    width: 25%;
+    padding-right: 10%;
+    
+    
+}
+.beer-image img,
+.mains-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space under image */
+    margin-left: auto; /* Center image within its container */
+    margin-right: auto; /* Center image within its container */
+   
+ }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**/
+                                                                                             /*GIFT VOUCHER PAGE STYLES*/
+.voucher{
+    text-align: center; /*Making sure the gift voucher is in propertion and responsive */ 
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    margin-top: 60px ;
+
+}
+
+.voucher iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 600px; /*making the voucher form responsive*/
+    border: 0;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**/
+                                                                                             /*ABOUT US PAGE STYLES*/
+.about{
+    text-align: center; /*size of the about use container*/
+    margin-top: 60px;
+    margin-bottom: 120px;
+} 
+.about-image img{
+    position: relative;
+    width: 30%; /*making the image responsive*/
+    
+} 
+
+#about-us{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+                                                                                                  /*ABOUT US PAGE STYLES*/
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.contact-map {
+    padding-right: 10%;
+    padding-left: 15% ;
+}
+
+.contact-map iframe{
+    max-width: 100%;
+    max-height: 90%; /*making the embedded map responsive*/
+}
+
+.address{
+    padding-left: 30%;
+   
+}
+
+.address p {
+    text-align: left;
+}
+
+.queries{ /*styles for the queries form*/
+    text-align: center;
+}
+
+.queries-form{
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.queries-form iframe{
+    max-width: 100%;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**/
+                                                                                            /*STYLES FOR SMALLER SCREENS*/
+
+  @media screen and (max-width: 1880px) {
+
+    /*MENU HOMESCREEN STYLES FOR SMALLER SCREENS */
+    
+    .menu-homepage {
+        
+        align-items: center;
+        height: auto; /* adjust height for smaller screens */ 
+        background: url("../Images/Scallops.jpg") no-repeat fixed 80%; /* making sure the fixed image will not end while scrolling the page*/
+    }
+
+    .menu-item:first-child {
+        margin-right: 80px; /* Remove margin for the first item */
+    }
+    
+    .menu-item img.menu-image {
+        width: 100%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between image and button */
+    }
+    .homeculture {
+        margin-top: 10px; /* changing the margin for smaller screens */
+    }
+    
+
+    .culture-image {
+        margin-top: 20px;
+    }
+
+    .culture-image img {
+        size: 100px;
+        margin-bottom: 5px; /* Add spacing between image and buttons */
+    }
+
+  /*FOOTER STYLES FOR SMALLER SCREENS */  
+    footer {
+        flex-direction: column; /* Stack items in a column. */
+        padding: 10px; /* adjust padding for smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .contact-info {
+        order: 1; /* Change the order to appear first*/
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center; /* Center align social icons */
+        flex-grow: 1; /* Allow this section to grow as needed */
+        order: 2; /*set the order to two so the social media links are under the contact info. */
+        margin-top: 40px;
+    }
+
+    .social-media .fa {
+        margin: 0 10px; /* Adjust spacing between icons */
+    }
+    
+    .contact-info .second-line {
+        margin-top: 10px; /* Adjust as needed */
+        text-align: center;
+        margin: 0 auto; /* Center the content horizontally */
+        flex-grow: 1; /* Allow this section to grow as needed */
+    }
+    .copyright {
+        order: 3; /* the order to appear last */
+        margin-left: 18px;       
+    }
+    /* FOOD AND DRINKS PAGES STYLES FOR SMALLER SCREENS*/
+    .appetizer-image img,
+    .mains-image img,
+    .wine-image img {
+    width: 130%;
+
+    }
+
+    /*ABOUT US IMAGE SIZING*/
+    .about-image img{
+        width: 50%; /*making the image responsive*/
+        
+    }    
+
+}
+
+
+
+
+
+@media screen and (max-width: 1716px) {
+   /* making sure the navigation screen movesout as the screen goes smaller*/
+    nav ul {
+        
+        margin-left: 5px;
+        margin-right: 80px;     
+    }
+    /*changing the position of the staff portal so it is still inline with the contact us link*/
+    .staff-portal {
+        right: 90px; /* Use a negative margin to move it up */
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1435px) {
+    /*on the javascript function you can see if the toggle menu is open it will make the conent of the page dissapear and only show the options*/
+    .hidden {
+        display: none !important;
+    }
+    
+    h1 {
+        font-size: 30px;
+        
+    }
+    /*changing the font size and margins for paragraphs so they are not right up against the screen*/
+    p{
+        font-size: 16px;
+        margin-right : 10px;
+        margin-left: 10px;
+        
+    }
+
+
+/*TOGGLE MENU STYLES*/
+
+    .toggle-menu {
+        display: block;
+        text-align: center;
+        margin: 10px auto; /* Center the button horizontally */
+        font-size: 40px;
+        cursor: pointer;
+        color: #6899b2;
+        
+    }
+    /*styling  logo for smaller screens*/
+    .mobile-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom:40px ;
+        margin-left:24px ;
+        
+    }
+
+    #mobile-logo{
+        height: 100px;
+          
+    }
+    
+    /* Show the mobile menu when 'open' class is present refer to Javascript file */
+    .mobile-menu.open {
+    display: block; 
+    text-align: center;
+    
+     }
+
+    .mobile-menu {
+        list-style-type: none; /* Removes the dots */
+        padding: 0; /* Remove default padding */
+    }
+    
+    /* Styling the li items */
+    .mobile-menu li {
+        text-align: center; /* center-align  listed items */
+        margin: 15px 0; /* Add margin between list  */
+    }
+    
+    /* Styling the anchor links */
+    .mobile-menu li a {
+        text-decoration: none; /* Remove underlines from links */
+        color: #333; /* link color */
+        display: block; /* make links block elements for better spacing.*/
+        padding: 10px; /* Add padding to the links */
+        border-radius: 5px; /* Add some border radius for a button-like appearance */
+        transition: background-color 0.3s ease; /* Add transition for hover effect */
+        font-family: "Mulish", sans-serif;
+        font-size: 20px;
+        src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+
+    }
+    
+    /* Styling the anchor links on hover */
+    .mobile-menu li a:hover {
+        color: #6899b2; /* Change background color on hover */
+    }
+
+
+    nav ul {
+        display: none; /* hide the nav menu by default */
+        /* Additional styling for the mobile menu */
+    }
+    
+
+
+/*MENU HOMEPAGE STYLES FOR SMALLER SCREENS*/
+
+    .menu-homepage {
+        flex-direction: column; /*Ensuring that the items are columed on smaller screens.  */
+        align-items: center;  
+        background: none;
+        
+    }
+
+    .menu-item {
+        width:  100% ; /* Full width of the boxes for smaller screens */
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* center items horizontally */
+        text-align: center; /* Center text within. */
+             
+    }
+    .menu-item p{  
+        margin-bottom: 20px; /*change the margin from the paragraphs and the images  */
+    }
+
+    .menu-item:first-child {
+        margin-right: 0; /* Remove margin for the first item */
+    }
+    
+    .menu-item img.home-menu-image {
+        width: 100%; /* adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* space between image and button */
+        display: block;    
+    }
+
+    .menu-item a.button {
+        margin-top: auto; /* push the button to the bottom */
+    }
+
+
+/*MAORI CULTURE AND RECIPES HOMEPAGE STYLES HOMEPAGE FOR SMALLER SCREENS  */
+    .homeculture {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+        text-align: center;
+    }
+
+    
+    .culture-images {
+        flex-direction: column; /* making the image on the maori culture and recipes colums and center */
+        align-items: center;
+    }
+
+    .culture-image {
+        margin-top: 20px;
+    }
+
+    .culture-image img {
+        width: 85%; /* Adjust image width for smaller screens */
+        margin-bottom: 5px; /* Add spacing between image and buttons */
+    }
+
+     /*setting the second traditional recipes button to display and styling it*/  
+    .culture-homepage-button2  {
+        display: block;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #698c9d;
+        border: 1px solid #698c9d;
+        text-align: center;
+        transition: background-color 0.4s ease;
+        font-family: "Mulish", sans-serif;
+        font-size: 18px;
+        margin-top: 20px; /* Aligns button at the bottom */
+        margin-bottom: 10px; /* Space from the paragraph */
+        src: url(https://fonts.gstatic.com/s/cinzel/v14/8vIJ7ww63mVu7gtR-kwKxNvk.woff2) format('woff2');
+
+    }
+    
+    .culture-homepage-button2:hover {
+        background-color: #6899b2;
+        color: white;
+    }
+    /* Hide the traditional food image on smaller screens */
+    .culture-image:nth-child(2) {
+        display: none;
+    }
+
+    .visit{
+        margin-top: 10px;
+    }
+
+    .map-container iframe {
+        width: 90%; /* adjust the width for smaller screens */
+        height: 500px; /* change height for smaller screens */
+    }
+
+    .map-container {
+        margin-top: 30px; /* change the margin from the top */
+    }
+
+    .reservation-button {
+        width: 200px; /* Adjust the width of the button */
+        margin-top: 40px; /* Adjust margin from the map */
+    }
+    
+
+/*FOOTER STYLES FOR SMALLER SCREENS*/
+    footer {
+        flex-direction: column; /* Stack items in a column */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .contact-info {
+        order: 1; /* making sure the contact info is above the social media links*/
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center; /* Center align social icons */
+        order: 2; /*making sure the social media icons are below the contact info*/
+        margin-top: 40px;
+    }
+
+    .social-media .fa {
+        margin: 0 10px; /* Adjust spacing between social media icons */
+    }
+    
+    .contact-info .second-line {
+        margin-top: 10px; /* Adjust as needed */
+        text-align: center;
+        margin: 0 auto; /* center the content horizontally */
+        flex-grow: 1; /* Allow this section to grow as needed */
+    }
+    .copyright {
+        order: 3; /* Change the order to appear at the bottom of the social media links */
+        margin-left: 0px;
+        
+        
+        
+    }
+
+/*MAORI CULTURAL PAGE SMALLER SCREEN STYLES*/
+
+    .history-picture img{
+        width: 90%;
+    }
+
+    #cultural-video-iframe{
+        width: 90%;
+    }
+}
+
+ 
+
+
+@media screen and (max-width: 1393px) {
+
+     /*MAORI CULTURAL EXPERIENCE PAGE STYLES SMALLER SCREENS*/
+
+                /* making the icons for the audio on the maori cultural page stack on top of each other for smaller screens*/
+    .top-icons {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center icons horizontally */
+    }
+
+    .center-icons{
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center icons horizontally */
+        margin-top: 10px;
+
+    }
+
+    .audio-word {
+        margin-bottom: 10px; /* Reduce spacing between stacked icons */
+        flex-grow: initial; /* Reset flex-grow to maintain individual icon size */
+    }
+
+
+
+     
+
+/*TRADITIONAL RECIPES PAGE STYLES FOR SMALLER SCREENS. NOTE SOME STYLES ARE USED IN THE DRINKS PAGE AND THE FOOD PAGE*/
+     .drink-menu,
+     .food-menu,
+     .recipe-details { 
+        flex-direction: column;
+        align-items: center;
+    
+    }  
+  /*paua dish and ingredients dstyles. Along with styles for the food menu page and drinks menu page. these are the top and bottom menu lists */
+     .wine-image,
+     .juice-image,
+     .appetizer-image,
+     .dessert-image,
+     .paua-image{
+        display: none; /*respective images will not show up on smaller screens. The top and bottom menus aswell as the paua soup recipe*/
+        
+     }
+     .wine-image-mobile,
+     .juice-image-mobile,
+     .appetizer-image-mobile,
+     .dessert-image-mobile,
+     .paua-image-mobile{
+       display: block; 
+       max-width: 500px;/*setting max width for smaller screens*/
+       padding-right: 0%;
+       margin-bottom: 40px;
+    }
+     .wine-image-mobile img,
+     .juice-image-mobile img,
+     .appetizer-image-mobile img,
+     .dessert-image-mobile img,
+     .paua-image-mobile img {
+       width: 100%;
+       height: auto;
+       display: block; 
+       margin-left: 0px; /* Center image within its container */
+       margin-right: 0px; /* Center image within its container */
+
+    
+    }
+     .wine-menu,
+     .wine-menu p,
+     .juice-menu,
+     .appetizer-menu,
+     .appetizer-menu p,
+     .dessert-menu,
+     .ingredients-paua {
+       width: 100%; /* Full width for ingredients and menu lists */
+       max-width: 100%; /* max width */
+       text-align: center; /* align  to  center */
+       padding: 0%; /*get rid of the padding*/
+    }
+    
+    .ingredients-paua h2{
+    text-align: center; /*alligning the h2s in the center*/
+    }
+
+
+    /*Maori bread image and ingredient list styles*/
+    .beer-image,
+    .mains-image,
+    .bread-image{
+       width: 100%;
+       display: block; 
+       max-width: 500px;/*setting max width for smaller screens*/
+       padding-right: 0px;
+       padding-left: 0px;/*reset the padding*/
+       margin-bottom: 40px;
+        
+     }
+     .beer-image img,
+     .mains-image img,
+     .bread-image img {
+       max-width: 100%; /*setting max width for smaller screens*/
+       height: auto;
+       margin-left: 0px; /* Center image within its container */
+       margin-right: 0px; /* Center image within its container */
+    
+    }
+     .beer-menu,
+     .mains-menu,
+     .ingredients-bread {
+       width: 100%; /* Full width for ingredients */
+       max-width: 100%; /* Full width for ingredients */
+       text-align: center; /* Align ingredients to the center */
+       padding: 0%; /*get rid of the padding*/
+    }
+    
+    .ingredients-bread h2{
+    text-align: center;
+    }
+    .wine-menu p, /*making sure the paragraphs are in the center of the screens for all menus when on mobile app. */
+    .appetizer-menu p,
+    .mains-menu p,
+    .dessert-menu p{
+        text-align: center; /* Align text to the center */
+        width: 100%;
+    
+    } 
+    
+    /*CONTACT US PAGE STYLES FOR SMALLER SCREENS*/
+
+    .contact-us{
+        flex-direction: column;
+        align-items: center; /*stacking the contact info on the embedded map on the contact us page*/
+    }
+
+    .address{
+        padding-left: 0px;
+        padding-bottom: 20px; /*reset the paddings for contact info on cantact us page*/
+    }
+    .address p{
+        text-align: center;
+    }
+
+    .contact-map{
+        padding-right: 1%;
+        padding-left: 1%; /*reset the paddings for map on cantact us page*/
+    }
+
+    .contact-map iframe {
+        max-width: 100%;
+    }
+    
+
+    @media screen and (max-width: 760px) {
+        .about-image img{ /*making the about image more responsive by ajusting the width og the image*/
+            width: 70%;
+        }
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

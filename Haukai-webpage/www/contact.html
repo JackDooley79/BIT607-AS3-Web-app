@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haukai restaurant, Contact information, Maori cultural experience, Food menu, Drinks menu, Bay of Islands">
+    <title>Haukai - About Us</title>
+        <!-- stylesheets and fonts -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Mulish:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+                <!-- Nav menu options -->
+
+    <header class="content">                   
+        <nav >
+            <ul>
+                <!-- Logo far lkeft of the screen-->
+                <li class="logo">
+                    <img id="logo" src="Images/logo.png" alt="Hauriki Logo">
+                </li>
+                <!-- Homepage link then Dropdown items for Māori Culture, Menus, Reservations. -->
+                <li><a href="index.html">Home</a></li>             
+                <li class="dropdown">
+                    <a >Māori Culture and Recipes</a>
+                    <ul class="dropdown-content">
+                        <li><a href="maori-cultural.html">Māori Cultural Experience</a></li>
+                        <li><a href="traditional-recipes.html">Traditional Recipes</a></li>
+                    </ul>
+                </li>
+                <li><a href="reservations.html">Reservations</a></li>             
+                <li class="dropdown">
+                    <a>Menus</a>
+                    <ul class="dropdown-content">
+                        <li><a href="food.html">Food Menu</a></li>
+                        <li><a href="drinks.html">Drinks Menu</a></li>
+                    </ul>
+                </li>                  
+                <!-- About Us, Contact Us, Staff Portal -->
+                <li><a href="gift.html">Gift Vouchers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="staff-portal"><a href="Private/staff.html">Staff Portal</a></li>
+            </ul>
+        </nav>
+            <!-- Logo for when on smaller screens-->
+        <div  class="mobile-logo">
+            <img id="mobile-logo" src="Images/logo.png" alt="Hauriki Logo"> 
+        </div>
+            <!-- Toggle menu for when on smaller screens -->
+        <div class="toggle-menu">&#9776;            
+        </div>
+        <div class="toggle-options">
+                        <!-- Mobile menu options -->
+            <ul class="mobile-menu">
+                <li><a href="Home">Home</a></li>
+                <li><a href="food.html">Food Menu</a></li>
+                <li><a href="drinks.html">Drinks Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="maori-cultural.html">Māori Cultural Experience</a></li>
+                <li><a href="traditional-recipes.html">Traditional Recipes</a></li>
+                <li><a href="gift.html">Gift Vouchers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Private/staff.html">Staff Portal</a></li>
+            </ul>     
+        </div>       
+    </header>
+
+    <main>
+        <!-- Main Content Section -->
+            <!--Contact us heading and address  -->
+           <section class="intro">
+                <h1>Contact Us</h1>
+                <h2></h2>
+           </section>
+           <section class ="contact-us">
+             <div class="address">
+                <p>Address: 1 Island Street, Kerikeri, Bay of Islands</p>
+                <p>Phone: (09) 401 4019</p> 
+                <p>Email: Haukai.notarealemail@gmail.com</p>        
+             </div>
+             <div class="contact-map">
+                <!-- Embeded google maps code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.0954015280217!2d173.94719397738243!3d-35.22899509079189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1704162477141!5m2!1sen!2snz" title= "Embedded google maps" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Google map of the address"></iframe>
+             </div>  
+           </section>
+           <section class="queries">
+            <h2>Queries and Feedback</h2>
+            <p>We would love to answer your queries and recieve feedback from your experience. If you would like, fill out out the form below.</p>
+            <div class="queries-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfhqPjGZlxwRC7T5qrF8axYMRFEnfBRK83bd8uzBGmjPEnPGQ/viewform?embedded=true" width="1240" height="516" frameborder="0" marginheight="0" marginwidth="0" alt="Querries form">Loading…</iframe>
+            </div>
+
+
+           </section>
+       </main>
+    <footer >
+        <div class="contact-info">
+            <p>Address: 1 Island Street, Kerikeri, Bay of Islands</p>
+            <p class = "second-line">Phone: (09) 401 4019</p>
+          </div>
+          <div class="copyright">
+            <br>
+            <br>
+            <p>&copy; 2023 Haukai Restaurant. All rights reserved.</p>
+          </div>
+          <div class="social-media">
+            <!--  social media  links -->
+            <a href="#" class="fa fa-facebook"  alt="Facebook" aria-label="Visit our Facebook page"></a>
+            <a href="#" class="fa fa-twitter"  alt="Twitter" aria-label="Visit our Twitter page"></a>
+            <a href="#" class="fa fa-instagram"  alt="instagram" aria-label="Visit our Instagram page"></a>
+          </div>
+    </footer>
+         <!-- Java script for when on smaller screens -->
+    <script src="JS/Java.js"></script>
+</body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haukai restaurant, Homepage, Maori cultural experience, Food menu, Drinks menu, Bay of Islands">
+    <title>Haukai - Home</title>
+        <!-- stylesheets and fonts -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Mulish:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+                <!-- Nav menu options -->
+
+    <header class="content">                   
+        <nav >
+            <ul>
+                            <!-- Dropdown items for Māori Culture, Menus, then link to Reservations -->
+                <li class="dropdown">
+                    <a>Māori Culture and Recipes</a>
+                    <ul class="dropdown-content">
+                        <li><a href="maori-cultural.html">Māori Cultural Experience</a></li>
+                        <li><a href="traditional-recipes.html">Traditional Recipes</a></li>
+                    </ul>
+                </li>
+                <li><a href="reservations.html">Reservations</a></li>               
+                <li class="dropdown">
+                    <a>Menus</a>
+                    <ul class="dropdown-content">
+                        <li><a href="food.html">Food Menu</a></li>
+                        <li><a href="drinks.html">Drinks Menu</a></li>
+                    </ul>
+                </li>
+                    <!-- Logo situated in the middle-->
+                <li class="homepage-logo">
+                    <img id="homepage-logo" src="Images/logo.png" alt="Hauriki Logo">
+                </li>
+                <!-- Gift Vouchers, About Us, Contact Us, Staff Portal -->
+                <li><a href="gift.html">Gift Vouchers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="staff-portal"><a href="Private/staff.html">Staff Portal</a></li>
+            </ul>
+        </nav>
+            <!-- Logo for when on smaller screens-->
+        <div  class="mobile-logo">
+            <img id="mobile-logo" src="Images/logo.png" alt="Hauriki Logo"> 
+        </div>
+            <!-- Toggle menu for when on smaller screens -->
+        <div class="toggle-menu">&#9776;            
+        </div>
+        <div class="toggle-options">
+                        <!-- Mobile menu options -->
+            <ul class="mobile-menu">
+                <li><a href="food.html">Food Menu</a></li>
+                <li><a href="drinks.html">Drinks Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="maori-cultural.html">Māori Cultural Experience</a></li>
+                <li><a href="traditional-recipes.html">Traditional Recipes</a></li>
+                <li><a href="gift.html">Gift Vouchers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Private/staff.html">Staff Portal</a></li>
+            </ul>     
+        </div>
+        
+    </header>
+                  <!-- Home page intro -->
+    <main>
+                <!-- Introduction section -->
+        <section class="welcome">
+            <h1>Welcome to the Haukai Restaurant</h1>
+            <p> Experience a fusion of Māori and European dishes, where traditional meets modern.</p>
+            <p>Join us to enjoy a delightful mix of cultural cuisines and learn about the culture and history of the Bay of Islands.</p>      
+        </section>
+        <h1>-Menus-</h1>
+        <section class="menu-homepage">
+            <!-- Content for the food and dink menu -->
+            <div class="menu-item">
+                <h2>Food</h2>
+            <!-- Each item contains a heading, description, image, and a button -->
+                <p>Have a look at our range of food, from seafood dishes, New Zealand Lamb, Venison and delicious desserts. </p>
+                 <!-- background image-->     
+                <img src="Images/Scallops.jpg" alt="Food Image" class="home-menu-image">
+                <a href="food.html" class="button">View Food Menu</a>                
+            </div>
+            <div class="menu-item">
+                <h2>Drinks</h2>
+                <p>We have a range of red and white wines. If beer is your choice then we have you covered along with non alcoholic drinks. </p>
+                <img src="Images/drinks-homepage.jpg" alt="Drinks Image" class="home-menu-image">
+                <a href="drinks.html" class="button">View Drinks Menu</a>          
+            </div>
+        </section>
+                    <!-- Content for Maori Cultural experience and Traditional recipes -->
+        <section class="homeculture">
+            <h1>-Māori Culture and Recipes-</h1>
+                        <!-- Images and buttons for exploring Māori Culture and Traditional Recipes -->
+            <div class="culture-info">   
+                <p>Explore the culture and local history of the Māori people </p>
+                <p>and learn how to make traditional food.</p>
+            </div>
+            <div class="culture-images">
+                <div class="culture-image">
+                    <img src="Images/culture-homepage.jpg" alt="Maori culture image">
+                    <a href="maori-cultural.html" class="culture-homepage-button">Explore Māori Culture</a>
+                    <!-- this button will appear on smaller screens as the other image will disappear -->
+                    <a href="traditional-recipes.html" class="culture-homepage-button2">Explore Traditional Recipes</a>
+                </div>
+                <div class="culture-image">
+                    <img src="Images/tradfood-homepage.jpg" alt="Traditional food">
+                    <a href="traditional-recipes.html" class="culture-homepage-button">Explore Traditional Recipes</a>
+                </div>
+            </div>
+        </section>
+                    <!-- Come visit us section with google iframe embedded -->
+
+        <section class="visit">
+            <h1>-Come Visit Us-</h1>
+            <p>Explore our restaurant located in a the beautiful Bay of Islands.</p>
+            <p>1 Island Street Kerikeri, Bay of Islands. Check out our reservation page to see our hours.</p>
+            <div class="map-container">
+                            <!-- Embedded Google Maps and a reservation button -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.0954015280217!2d173.94719397738243!3d-35.22899509079189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1704162477141!5m2!1sen!2snz" title= "Embedded google maps" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Embedded google maps"></iframe>
+                            <!-- reservation button -->
+                <a href="reservations.html" class="reservation-button">Reservation Page</a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer containing contact info copyright and social media links -->
+    <footer >
+        <div class="contact-info">
+            <p>Address: 1 Island Street, Kerikeri, Bay of Islands</p>
+            <p class = "second-line">Phone: (09) 401 4019</p>
+          </div>
+          <div class="copyright">
+            <br>
+            <br>
+            <p>&copy; 2023 Haukai Restaurant. All rights reserved.</p>
+          </div>
+          <div class="social-media">
+            <!--  social media  links -->
+            <a href="#" class="fa fa-facebook"  alt="Facebook" aria-label="Visit our Facebook page"></a>
+            <a href="#" class="fa fa-twitter"  alt="Twitter" aria-label="Visit our Twitter page"></a>
+            <a href="#" class="fa fa-instagram"  alt="instagram" aria-label="Visit our Instagram page"></a>
+          </div>
+    </footer>
+         <!-- Java script for when on smaller screens -->
+    <script src="JS/Java.js"></script>
+</body>
+
+</html>
